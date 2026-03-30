@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "merx-sdk"
+version = "1.0.0"
+description = "Official Python SDK for the Merx TRON resource exchange"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://merx.exchange"
+Repository = "https://github.com/Hovsteder/merx-sdk-python"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["merx*"]
